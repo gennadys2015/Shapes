@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">צורות</string>
+
+    <string name="action_settings">הגדרות</string>
+    <string name="x">X:</string>
+    <string name="y">Y:</string>
+    <string name="r">R:</string>
+    <string name="w">W:</string>
+    <string name="h">H:</string>
+    <string name="draw">צייר</string>
+    <string name="clear">נקה</string>
+    <string name="errMsg">הקש כל הפרמטרים</string>
+
+
+
+
+</resources>

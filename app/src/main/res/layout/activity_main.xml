@@ -1,0 +1,170 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#77ff77"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tb"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/x"
+                android:id="@+id/XR"
+                android:layout_column="0"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/xr"
+                android:layout_column="1"      />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/y"
+                android:id="@+id/YR"
+                android:layout_margin="0dp"
+                android:layout_column="2"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/yr"
+                android:layout_column="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w"
+                android:id="@+id/WR"
+                android:layout_column="4"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/wr"
+                android:layout_column="5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/h"
+                android:id="@+id/HR"
+                android:layout_column="6"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/hr"
+                android:layout_column="7" />
+            <Spinner
+                 android:id="@+id/ColorSpinner"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="8"
+               />
+
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/x"
+                android:id="@+id/XC"
+                android:layout_column="0"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/xc"
+                android:layout_column="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/y"
+                android:id="@+id/YC"
+                android:textStyle="bold"
+                android:layout_column="2" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/yc"
+                android:layout_column="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/r"
+                android:id="@+id/RC"
+                android:layout_column="4"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/rc"
+                android:layout_column="5" />
+              <Spinner
+                  android:id="@+id/ColorSpinner0"
+                  android:layout_width="wrap_content"
+                  android:layout_column="8" />
+
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/display"
+        android:background="#ffffff"
+        android:layout_above="@+id/draw">
+    </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/draw"
+            android:id="@+id/draw"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/clear"
+        android:layout_below="@+id/display"
+        android:layout_toEndOf="@+id/draw" />
+
+</RelativeLayout>
